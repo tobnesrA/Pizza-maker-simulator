@@ -30,7 +30,6 @@
             background-color: var(--light);
         }
         
-        /* Header & Navigation */
         header {
             background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
             color: white;
@@ -76,7 +75,6 @@
             opacity: 0.8;
         }
         
-        /* Hero Section */
         .hero {
             background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
             color: white;
@@ -139,7 +137,6 @@
             background-color: rgba(255,255,255,0.1);
         }
         
-        /* Main Container */
         .container {
             max-width: 1000px;
             margin: 0 auto;
@@ -165,24 +162,6 @@
         p {
             margin-bottom: 15px;
             text-align: justify;
-            font-size: 1.05em;
-            line-height: 1.8;
-        }
-        
-        img {
-            max-width: 100%;
-            height: auto;
-            margin: 30px 0;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        }
-        
-        ul, ol {
-            margin: 20px 0 20px 40px;
-        }
-        
-        li {
-            margin-bottom: 12px;
             font-size: 1.05em;
             line-height: 1.8;
         }
@@ -222,11 +201,6 @@
             margin-bottom: 15px;
         }
         
-        .feature-card h3 {
-            margin-top: 0;
-        }
-        
-        /* Footer */
         footer {
             background-color: var(--dark);
             color: white;
@@ -263,42 +237,20 @@
             padding-top: 20px;
             font-size: 0.9em;
         }
-        
-        /* Responsive */
+
         @media (max-width: 768px) {
-            .nav-links {
-                gap: 1rem;
-                font-size: 0.9em;
-            }
-            
-            .hero h1 {
-                font-size: 2em;
-            }
-            
-            .hero p {
-                font-size: 1em;
-            }
-            
-            .cta-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .btn {
-                width: 100%;
-                max-width: 300px;
-                justify-content: center;
-            }
+            .nav-links { gap: 1rem; font-size: 0.9em; }
+            .hero h1 { font-size: 2em; }
+            .hero p { font-size: 1em; }
+            .cta-buttons { flex-direction: column; align-items: center; }
+            .btn { width: 100%; max-width: 300px; justify-content: center; }
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
     <header>
         <nav>
-            <div class="logo">
-                🍕 Pizza Cooker
-            </div>
+            <div class="logo">🍕 Pizza Cooker</div>
             <ul class="nav-links">
                 <li><a href="#description">About</a></li>
                 <li><a href="#features">Features</a></li>
@@ -308,7 +260,6 @@
         </nav>
     </header>
     
-    <!-- Hero Section -->
     <section class="hero">
         <h1>🍕 Pizza Cooking Simulator</h1>
         <p>Master the art of pizza making in this engaging step-by-step cooking game!</p>
@@ -322,219 +273,68 @@
         </div>
     </section>
     
-    <!-- Main Content -->
     <div class="container">
         <section id="description">
             <h2>📖 Project Description</h2>
+            <p>This game is a step-by-step pizza cooking simulator. The player must choose basic ingredients, add them in the correct sequence, prepare the dough and filling, and then serve the finished dish to customers. At the beginning, only basic products are available, but as you progress through the game, new ingredients and recipes unlock.</p>
             
-            <p>This game is a step-by-step pizza cooking simulator. The player must choose basic ingredients, add them in the correct sequence, prepare the dough and filling, and then serve the finished dish to customers. At the beginning, only basic products are available, but as you progress through the game, new ingredients and recipes unlock, allowing you to cook different types of pizza.</p>
-            
-            <img src="image1.png" alt="Pizza cooking game environment - street view">
-            
-            <p>The player must carefully follow the steps: choosing ingredients, placing them correctly, the cooking process, and serving orders. If the order is violated or something is done incorrectly, the pizza may turn out poor quality or fail inspection altogether.</p>
-            
-            <img src="image2.png" alt="Pizza kitchen interior with counter and fireplace">
+            <p>The player must carefully follow the steps: choosing ingredients, placing them correctly, and the cooking process. If the order is violated or something is done incorrectly, the pizza may turn out poor quality.</p>
             
             <p>The game is designed for gradual complexity. As you progress, the number of orders increases, more complex recipes are added, and time management elements appear. This makes the gameplay dynamic and interesting.</p>
-            
-            <p>The interface is oriented toward easy learning: the first stages are easy and clear, and subsequent steps require more attention and tactics. Thanks to this approach, the player can fearlessly try different combinations and learn from their results.</p>
         </section>
         
         <section id="features">
             <h2>🎮 Key Features</h2>
-            
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="icon">📋</div>
                     <h3>Step-by-Step Gameplay</h3>
-                    <p>Follow a clear sequence: select ingredients → add them → cook → serve to customer</p>
+                    <p>Follow a clear sequence: select ingredients → add → cook → serve</p>
                 </div>
                 <div class="feature-card">
                     <div class="icon">🔓</div>
                     <h3>Progressive Unlocking</h3>
-                    <p>Discover new ingredients and recipes as you advance through the game</p>
+                    <p>Discover new ingredients and recipes as you advance</p>
                 </div>
                 <div class="feature-card">
                     <div class="icon">📈</div>
                     <h3>Increasing Difficulty</h3>
                     <p>Orders become more complex and time management becomes crucial</p>
                 </div>
-                <div class="feature-card">
-                    <div class="icon">⚡</div>
-                    <h3>Attention to Detail</h3>
-                    <p>Every step matters - incorrect order means a failed pizza</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">🧩</div>
-                    <h3>Strategic Combinations</h3>
-                    <p>Develop your own cooking strategy by combining different products</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">🎓</div>
-                    <h3>Practical Learning</h3>
-                    <p>Learn planning, sequencing, and resource management through gameplay</p>
-                </div>
             </div>
-            
-            <img src="image3.png" alt="Detailed kitchen setup with cooking equipment">
             
             <div class="feature-section">
                 <h3>Why Play Pizza Cooking Simulator?</h3>
-                <p>The game can be viewed as practical training in the basics of cooking: even if real culinary skills don't develop directly, the player learns to plan actions, understand the sequence of processes, and consider limited resources.</p>
-                <p>Whether you're a casual gamer looking for a relaxing experience or someone interested in strategy games, Pizza Cooking Simulator offers engaging gameplay that challenges your planning and decision-making skills.</p>
-            </div>
-        </section>
-        
-        <section id="roadmap">
-            <h2>🚀 Future Improvements</h2>
-            
-            <p>We're constantly working to make Pizza Cooking Simulator even better! Here's what we have planned for upcoming updates:</p>
-            
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="icon">🌍</div>
-                    <h3>Multiplayer Mode</h3>
-                    <p>Compete with friends in real-time pizza cooking challenges and leaderboards</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">🎨</div>
-                    <h3>Custom Pizzas</h3>
-                    <p>Create your own unique pizza recipes and share them with the community</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">🏆</div>
-                    <h3>Achievement System</h3>
-                    <p>Unlock badges and achievements for mastering different cooking techniques</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">🎵</div>
-                    <h3>Dynamic Soundtrack</h3>
-                    <p>Enhanced audio with adaptive music that changes based on gameplay urgency</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">📱</div>
-                    <h3>Mobile Version</h3>
-                    <p>Play on iOS and Android devices with optimized touch controls</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">🍴</div>
-                    <h3>Restaurant Expansion</h3>
-                    <p>Build and manage your own pizza restaurant empire with multiple locations</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">🎭</div>
-                    <h3>Character Customization</h3>
-                    <p>Personalize your character with different outfits, hats, and accessories</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">🌐</div>
-                    <h3>Story Mode</h3>
-                    <p>Immersive single-player campaign with unique characters and storyline</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">📊</div>
-                    <h3>Advanced Statistics</h3>
-                    <p>Detailed gameplay analytics and performance tracking over time</p>
-                </div>
-            </div>
-            
-            <div style="background: linear-gradient(135deg, #fff0f1 0%, #fff3e0 100%); padding: 30px; border-radius: 8px; margin: 30px 0; text-align: center; border-left: 5px solid var(--primary);">
-                <h3>Help Shape Our Vision</h3>
-                <p>Got ideas for new features? We'd love to hear from you! Join our community on Discord or open an issue on GitHub to suggest improvements and provide feedback.</p>
-                <div style="margin-top: 15px;">
-                    <a href="https://discord.com" class="btn btn-secondary" style="background-color: var(--primary); color: white; border-color: var(--primary);" target="_blank">
-                        <i class="fab fa-discord"></i> Join Discord Community
-                    </a>
-                </div>
+                <p>The game can be viewed as practical training: the player learns to plan actions, understand process sequencing, and manage limited resources.</p>
             </div>
         </section>
         
         <section id="download">
             <h2>💾 Download & Play</h2>
-            
-            <p>Ready to become a pizza master? Download the game now or check out our source code on GitHub.</p>
-            
+            <p>Ready to become a pizza master? Choose your platform below.</p>
             <div style="text-align: center; margin: 40px 0;">
-                <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin: 20px 0;">
-                    <a href="#" class="btn btn-primary">
-                        <i class="fab fa-windows"></i> Windows
-                    </a>
-                    <a href="#" class="btn btn-primary">
-                        <i class="fab fa-apple"></i> macOS
-                    </a>
-                    <a href="#" class="btn btn-primary">
-                        <i class="fab fa-linux"></i> Linux
-                    </a>
+                <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px;">
+                    <a href="#" class="btn btn-primary"><i class="fab fa-windows"></i> Windows</a>
+                    <a href="#" class="btn btn-primary"><i class="fab fa-apple"></i> macOS</a>
                 </div>
-                <p style="color: #666; font-size: 0.95em;">
-                    <i class="fas fa-code-branch"></i> Want to contribute? 
-                    <a href="https://github.com" style="color: var(--primary); text-decoration: none;">Visit our GitHub repository</a>
-                </p>
+                <p style="color: #666;"><i class="fas fa-code-branch"></i> <a href="https://github.com" style="color: var(--primary); text-decoration: none;">Visit our GitHub repository</a></p>
             </div>
         </section>
     </div>
-    
-    <!-- Footer -->
+
     <footer id="footer">
         <div class="footer-content">
             <h3>Pizza Cooking Simulator</h3>
-            <p>An indie game about passion, precision, and pizza!</p>
-            
             <div class="social-links">
-                <a href="https://github.com" target="_blank" title="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://twitter.com" target="_blank" title="Twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://discord.com" target="_blank" title="Discord">
-                    <i class="fab fa-discord"></i>
-                </a>
-                <a href="mailto:contact@pizzasimulator.com" title="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
             </div>
-            
             <div class="footer-bottom">
                 <p>&copy; 2026 Pizza Cooking Simulator. All rights reserved.</p>
                 <p>Developed by <strong>Beisenbek Nurfaiz</strong> & <strong>Kuatbek Ilyas</strong></p>
-                <p>Made with <span style="color: var(--primary);">❤️</span> for passionate pizza lovers</p>
             </div>
         </div>
     </footer>
-</body>
-</html>
-        
-        
-        <h2>Project Description</h2>
-        
-        <p>This game is a step-by-step pizza cooking simulator. The player must choose basic ingredients, add them in the correct sequence, prepare the dough and filling, and then serve the finished dish to customers. At the beginning, only basic products are available, but as you progress through the game, new ingredients and recipes unlock, allowing you to cook different types of pizza.</p>
-        
-        <img src="image1.png" alt="Pizza cooking game environment - street view">
-        
-        <p>The player must carefully follow the steps: choosing ingredients, placing them correctly, the cooking process, and serving orders. If the order is violated or something is done incorrectly, the pizza may turn out poor quality or fail inspection altogether.</p>
-        
-        <img src="image2.png" alt="Pizza kitchen interior with counter and fireplace">
-        
-        <p>The game is designed for gradual complexity. As you progress, the number of orders increases, more complex recipes are added, and time management elements appear. This makes the gameplay dynamic and interesting.</p>
-        
-        <p>The interface is oriented toward easy learning: the first stages are easy and clear, and subsequent steps require more attention and tactics. Thanks to this approach, the player can fearlessly try different combinations and learn from their results.</p>
-        
-        <h2>Key Features</h2>
-        
-        <div class="feature-section">
-            <ul>
-                <li><strong>Step-by-step pizza cooking process:</strong> ingredient selection → adding → cooking → serving to customer</li>
-                <li><strong>Gradual unlocking</strong> of new ingredients and recipes</li>
-                <li><strong>Order system</strong> with increasing difficulty</li>
-                <li><strong>Importance of correct order</strong> of actions and attention to detail</li>
-                <li><strong>Ability to develop cooking strategy</strong> by combining products</li>
-            </ul>
-        </div>
-        
-        <img src="image3.png" alt="Detailed kitchen setup with cooking equipment">
-        
-        <p>The game can be viewed as practical training in the basics of cooking: even if real culinary skills don't develop directly, the player learns to plan actions, understand the sequence of processes, and consider limited resources.</p>
-    </div>
 </body>
 </html>
